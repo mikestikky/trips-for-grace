@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Trips — Which One, Grace?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span> THREE TRIPS · FOR GRACE</a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <div class="links" id="navlinks">
+      <a href="index.html" class="active">Overview</a>
+      <a href="trip-baltics.html">1 · The Baltics</a>
+      <a href="trip-italy.html">2 · Italy &amp; Slovenia</a>
+      <a href="trip-transylvania.html">3 · Transylvania</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="intro">
+    <div class="eyebrow">A little trip menu · just for you</div>
+    <h1>Three Trips. Pick Your Favorite.</h1>
+    <p class="lede">Hi Grace — here are the three trips we've been talking about, each written up properly so you can really feel them. Click into any one for the full day-by-day, the hotels, the food, and a gallery. When one wins you over, tap <em>“This is the one for me.”</em> Nothing's booked — this is just to see which way your heart leans.</p>
+    <div class="pickbanner" data-pickbanner></div>
+  </div>
+
+  <div class="cards">
+    <a class="tcard c1" href="trip-baltics.html" data-trip="baltics">
+      <div class="ph" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Vistas_panor%C3%A1micas_desde_Toompea%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_01-03_PAN.JPG/1280px-Vistas_panor%C3%A1micas_desde_Toompea%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_01-03_PAN.JPG')">
+        <span class="badge">Trip One</span>
+      </div>
+      <div class="body">
+        <div class="sub">≈ 10 days · easiest · great value</div>
+        <h3>Helsinki &amp; the Baltics</h3>
+        <p>Medieval old towns, a ferry across the Baltic, Tallinn's Medieval Days festival, café mornings, and a fairy-tale island castle. Exploration over resorts.</p>
+        <div class="row"><span>Tallinn Medieval Days</span><span>Ferry travel</span><span>Cool weather</span><span>Trakai Castle</span></div>
+        <div class="go">Explore the Baltics →</div>
+      </div>
+    </a>
+
+    <a class="tcard c2" href="trip-italy.html" data-trip="italy">
+      <div class="ph" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bled_Island_%26_Bled_Castle_%281%29.jpg/1280px-Bled_Island_%26_Bled_Castle_%281%29.jpg')">
+        <span class="badge">Trip Two</span>
+      </div>
+      <div class="body">
+        <div class="sub">≈ 11 days · most romantic · the splurge</div>
+        <h3>Northern Italy &amp; Slovenia</h3>
+        <p>Barolo wine country, opera under the stars in Verona's Roman Arena, three nights in the Dolomites, then Lake Bled and Ljubljana. Built around your love of Italy.</p>
+        <div class="row"><span>Barolo &amp; Moscato</span><span>Opera in Verona</span><span>The Dolomites</span><span>Lake Bled</span></div>
+        <div class="go">Explore Italy &amp; Slovenia →</div>
+      </div>
+    </a>
+
+    <a class="tcard c3" href="trip-transylvania.html" data-trip="transylvania">
+      <div class="ph" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Castle_Pele%C5%9F_in_2009.jpg/1280px-Castle_Pele%C5%9F_in_2009.jpg')">
+        <span class="badge">Trip Three</span>
+      </div>
+      <div class="body">
+        <div class="sub">≈ 10 days · best castles · best value</div>
+        <h3>Transylvania Castles &amp; Wine</h3>
+        <p>Fairy-tale castles, the Dracula legend, walled medieval towns, fortified Saxon villages, and an undiscovered wine country — the most storybook of the three.</p>
+        <div class="row"><span>Bran &amp; Peleș Castles</span><span>Saxon villages</span><span>Dracula lore</span><span>Carpathians</span></div>
+        <div class="go">Explore Transylvania →</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="block tint" style="--accent-soft:#efe7da">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Side by side</div><h2>A quick comparison</h2><p>The same trip, three different moods. Here's the gist of each.</p></div>
+    <div style="overflow-x:auto">
+    <table class="compare-tbl">
+      <tr><th>&nbsp;</th><th>① The Baltics</th><th>② Italy &amp; Slovenia</th><th>③ Transylvania</th></tr>
+      <tr><td>The feeling</td><td>Medieval, easy, fresh-aired</td><td>Romantic, indulgent, scenic</td><td>Storybook, atmospheric, adventurous</td></tr>
+      <tr><td>Length</td><td>≈ 10 days</td><td>≈ 11 days</td><td>≈ 10 days</td></tr>
+      <tr><td>Built around</td><td>Old towns &amp; a festival</td><td>Wine, opera &amp; mountains</td><td>Castles &amp; legend</td></tr>
+      <tr><td>Getting around</td><td>Ferry, bus, one flight</td><td>Rental car &amp; train</td><td>Private driver or SUV</td></tr>
+      <tr><td>Best time</td><td>Early July (festival)</td><td>June–September (opera)</td><td>May–June or September</td></tr>
+      <tr><td>Cost feel</td><td>Comfortable middle</td><td>The splurge</td><td>Best value</td></tr>
+      <tr><td>Big draw</td><td>Tallinn Medieval Days</td><td>Opera in the Arena</td><td>Bran &amp; Peleș Castles</td></tr>
+    </table>
+    </div>
+    <p class="sans" style="text-align:center;color:var(--muted);font-size:13.5px;margin-top:14px">Tap a trip above to dive into the full guide.</p>
+  </div>
+</div>
+
+<footer>
+  Made for Grace, with love. · Tap a favorite on any trip page — it’s remembered here.<br>
+  Photos courtesy of Wikimedia Commons contributors.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 /* ===== Trips for Grace — shared script ===== */
 (function(){
   var KEY='graceTripPick';
-  var NAMES={baltics:'Helsinki &amp; the Baltics',italy:'Northern Italy &amp; Slovenia',transylvania:'Transylvania Castles'};
+  var NAMES={baltics:'Helsinki &amp; the Baltics',italy:'Northern Italy &amp; Slovenia',transylvania:'Transylvania Castles',georgia:'Georgia &amp; the Caucasus'};
   function get(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
   function set(v){try{v?localStorage.setItem(KEY,v):localStorage.removeItem(KEY);}catch(e){}}
 

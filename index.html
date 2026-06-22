@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Three Trips — Which One, Grace?</title>
+<title>Four Trips — Which One, Grace?</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,13 +13,14 @@
 
 <nav class="nav">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="dot"></span> THREE TRIPS · FOR GRACE</a>
+    <a class="brand" href="index.html"><span class="dot"></span> FOUR TRIPS · FOR GRACE</a>
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
     <div class="links" id="navlinks">
       <a href="index.html" class="active">Overview</a>
       <a href="trip-baltics.html">1 · The Baltics</a>
       <a href="trip-italy.html">2 · Italy &amp; Slovenia</a>
       <a href="trip-transylvania.html">3 · Transylvania</a>
+      <a href="trip-georgia.html">4 · Georgia</a>
     </div>
   </div>
 </nav>
@@ -27,9 +28,16 @@
 <div class="wrap">
   <div class="intro">
     <div class="eyebrow">A little trip menu · just for you</div>
-    <h1>Three Trips. Pick Your Favorite.</h1>
-    <p class="lede">Hi Grace — here are the three trips we've been talking about, each written up properly so you can really feel them. Click into any one for the full day-by-day, the hotels, the food, and a gallery. When one wins you over, tap <em>“This is the one for me.”</em> Nothing's booked — this is just to see which way your heart leans.</p>
+    <h1>Four Trips. Pick Your Favorite.</h1>
+    <p class="lede">Hi Grace — here are the four trips we've been talking about, each written up properly so you can really feel them. Click into any one for the full day-by-day, the hotels, the food, and a gallery. When one wins you over, tap <em>“This is the one for me.”</em> Nothing's booked — this is just to see which way your heart leans.</p>
     <div class="pickbanner" data-pickbanner></div>
+  </div>
+
+  <div class="tripmap">
+    <figure onclick="openLightbox(this.querySelector('img').src,'Four trip options at a glance')">
+      <img src="trip-map.png" alt="Map of the four trip options: 1 Baltics, 2 Italy &amp; Slovenia, 3 Transylvania, 4 Georgia — with each route, region, and day-by-day at a glance">
+      <figcaption>The four options at a glance — where each trip goes. Tap to enlarge.</figcaption>
+    </figure>
   </div>
 
   <div class="cards">
@@ -71,22 +79,35 @@
         <div class="go">Explore Transylvania →</div>
       </div>
     </a>
+
+    <a class="tcard c4" href="trip-georgia.html" data-trip="georgia">
+      <div class="ph" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kazbegi%2C_Gergeti_Trinity_Church_and_Mt_Kazbek_%2835959311351%29.jpg/1280px-Kazbegi%2C_Gergeti_Trinity_Church_and_Mt_Kazbek_%2835959311351%29.jpg')">
+        <span class="badge">Trip Four</span>
+      </div>
+      <div class="body">
+        <div class="sub">≈ 12 days · most adventurous · great value</div>
+        <h3>Georgia &amp; the Caucasus</h3>
+        <p>Ancient qvevri wine in Kakheti, sulfur baths and fortresses in Tbilisi, the Vardzia cave monastery, and the Georgian Military Highway up to Mt Kazbek. The surprising former-Soviet contender.</p>
+        <div class="row"><span>Kakheti wine</span><span>Cave monasteries</span><span>Caucasus mountains</span><span>Fortress roads</span></div>
+        <div class="go">Explore Georgia →</div>
+      </div>
+    </a>
   </div>
 </div>
 
 <div class="block tint" style="--accent-soft:#efe7da">
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow">Side by side</div><h2>A quick comparison</h2><p>The same trip, three different moods. Here's the gist of each.</p></div>
+    <div class="section-head"><div class="eyebrow">Side by side</div><h2>A quick comparison</h2><p>The same idea, four different moods. Here's the gist of each.</p></div>
     <div style="overflow-x:auto">
     <table class="compare-tbl">
-      <tr><th>&nbsp;</th><th>① The Baltics</th><th>② Italy &amp; Slovenia</th><th>③ Transylvania</th></tr>
-      <tr><td>The feeling</td><td>Medieval, easy, fresh-aired</td><td>Romantic, indulgent, scenic</td><td>Storybook, atmospheric, adventurous</td></tr>
-      <tr><td>Length</td><td>≈ 10 days</td><td>≈ 13 days</td><td>≈ 10 days</td></tr>
-      <tr><td>Built around</td><td>Old towns &amp; a festival</td><td>Wine, Venice &amp; mountains</td><td>Castles &amp; legend</td></tr>
-      <tr><td>Getting around</td><td>Ferry, bus, one flight</td><td>Train &amp; rental car</td><td>Private driver or SUV</td></tr>
-      <tr><td>Best time</td><td>Early July (festival)</td><td>June–September</td><td>May–June or September</td></tr>
-      <tr><td>Cost feel</td><td>Comfortable middle</td><td>The splurge</td><td>Best value</td></tr>
-      <tr><td>Big draw</td><td>Tallinn Medieval Days</td><td>Venice &amp; the Langhe</td><td>Bran &amp; Peleș Castles</td></tr>
+      <tr><th>&nbsp;</th><th>① The Baltics</th><th>② Italy &amp; Slovenia</th><th>③ Transylvania</th><th>④ Georgia</th></tr>
+      <tr><td>The feeling</td><td>Medieval, easy, fresh-aired</td><td>Romantic, indulgent, scenic</td><td>Storybook, atmospheric, adventurous</td><td>Ancient, surprising, off-beat</td></tr>
+      <tr><td>Length</td><td>≈ 10 days</td><td>≈ 13 days</td><td>≈ 10 days</td><td>≈ 12 days</td></tr>
+      <tr><td>Built around</td><td>Old towns &amp; a festival</td><td>Wine, Venice &amp; mountains</td><td>Castles &amp; legend</td><td>Wine, fortresses &amp; mountains</td></tr>
+      <tr><td>Getting around</td><td>Ferry, bus, one flight</td><td>Train &amp; rental car</td><td>Private driver or SUV</td><td>Private driver</td></tr>
+      <tr><td>Best time</td><td>Early July (festival)</td><td>June–September</td><td>May–June or September</td><td>May–June or September</td></tr>
+      <tr><td>Cost feel</td><td>Comfortable middle</td><td>The splurge</td><td>Best value</td><td>Great value</td></tr>
+      <tr><td>Big draw</td><td>Tallinn Medieval Days</td><td>Venice &amp; the Langhe</td><td>Bran &amp; Peleș Castles</td><td>Kakheti wine &amp; Mt Kazbek</td></tr>
     </table>
     </div>
     <p class="sans" style="text-align:center;color:var(--muted);font-size:13.5px;margin-top:14px">Tap a trip above to dive into the full guide.</p>
